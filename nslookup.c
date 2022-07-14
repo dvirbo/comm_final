@@ -20,7 +20,7 @@ int main(int argc, char* argv[]) {
 
   hostname = argv[1];
   
-  if (0 != getaddrinfo(hostname, NULL, NULL, &res)) {
+  if (0 != getaddrinfo(hostname, NULL, NULL, &res)) { // speak with local DNS
     fprintf(stderr, "Error in resolving hostname %s\n", hostname);
     exit(1);
   }
