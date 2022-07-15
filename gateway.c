@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define PORT 1337 
+#define PORT 1337 // P
 
 int main(int argc, char *argv[])
 {

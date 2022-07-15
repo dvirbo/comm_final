@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/dvirx/Desktop/comm_final'
+gcc recv_udp.c -o recv
+gcc send_udp.c -o send
+make: Leaving directory '/home/dvirx/Desktop/comm_final'
+ 

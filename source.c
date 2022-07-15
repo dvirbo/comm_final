@@ -6,6 +6,7 @@
 #include <sys/socket.h>
 #include <strings.h>
 #include <unistd.h>
+int NUM = 1;
 
 int main(int argc, char *argv[])
 {
@@ -31,13 +32,14 @@ int main(int argc, char *argv[])
     dest.sin_port = htons((u_short)0x3333); // define destanation port
 
     msgbuf.head = '<';
-    msgbuf.body = htonl(getpid()); // convert between host and network byte order.
+    msgbuf.body = htonl(NUM); // convert between host and network byte order.
     msgbuf.tail = '>';
     while (1)
     {
         sendto(socket_fd, &msgbuf, sizeof(msgbuf), 0, (struct sockaddr *)&dest,
                sizeof(dest)); // Send N bytes of BUF on socket FD to peer at address ADDR , return nom of bits that sent
-        // need to inc something here
+        // need to inc something here:
+        msgbuf.body = htonl(++NUM);
         sleep(1);
 
         return 0;
