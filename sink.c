@@ -11,7 +11,6 @@
 #include <string.h>
 #include <net/if.h>
 
-#define PORT 1338 // P+1
 
 void printsin(struct sockaddr_in *s, char *str1, char *str2)
 {
@@ -26,9 +25,7 @@ int main(int argc, char *argv[])
     struct sockaddr_in s_in, from;
     struct
     {
-        char head;
         u_long body;
-        char tail;
     } msg;
 
     socket_fd = socket(AF_INET, SOCK_DGRAM, 0); // create a socket for UDP
@@ -37,7 +34,7 @@ int main(int argc, char *argv[])
 
     s_in.sin_family = (short)AF_INET;         // insert IPv4 to s_in
     s_in.sin_addr.s_addr = htonl(INADDR_ANY); // cast IPv4 (~INADDER_ANY) to net form
-    s_in.sin_port = htons(PORT);              // insert to s_in a port num (short type)
+    s_in.sin_port = htons((u_short)0x3334);              // insert to s_in a port num (short type)
 
     printsin(&s_in, "RECV_UDP", "Local socket is:");
     fflush(stdout); // Flush STREAM --> clear the buffer
@@ -55,7 +52,7 @@ int main(int argc, char *argv[])
         else
         {
             printsin(&from, "recv_udp: ", "Packet from:");
-            printf("Got data ::%c%ld%c\n", msg.head, (long)ntohl(msg.body), msg.tail); // Write formatted output to stdout
+            printf("Got data ::%d\n",(int)ntohl(msg.body)); // Write formatted output to stdout
 
             fflush(stdout); // Flush STREAM --> clear the buffer
         }
