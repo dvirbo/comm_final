@@ -2,6 +2,8 @@ first: recv_udp send_udp
 
 sec: source gateway sink
 
+last: url
+
 recv_udp: recv_udp.c
 	gcc recv_udp.c -o recv
 
@@ -17,5 +19,8 @@ gateway: gateway.c
 sink: sink.c
 	gcc sink.c -o sink
 
+url: web_client.c
+	gcc web_client.c -o url
+
 clean:
-	rm -f *.o recv send  source sink gateway 
+	rm -f *.o recv send  source sink gateway  url
