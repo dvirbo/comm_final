@@ -11,7 +11,12 @@
 #include <string.h>
 #include <net/if.h>
 
-
+/*
+This function will print the string indicated by pname ended with a line break,
+ then it will print the string indicated by msg, 
+ then the string "ip= " follow by the IP address of the host associated with this socket address structure in dotted-decimal notation, a comma, 
+ and finally the string "port= " followed by the port number associated with this socket address structure.
+*/
 void printsin(struct sockaddr_in *s, char *str1, char *str2)
 {
     printf("%s\n", str1);
@@ -41,7 +46,7 @@ int main(int argc, char *argv[])
 
     bind(socket_fd, (struct sockaddr *)&s_in, sizeof(s_in)); // connect the socket with the addr of s_in & port
 
-    while (1)
+     for(;;) {
     {
         fsize = sizeof(from);
         cc = recvfrom(socket_fd, &msg, sizeof(msg), 0, (struct sockaddr *)&from, &fsize); // Read N bytes into BUF through socket FD & insert cc size of the message

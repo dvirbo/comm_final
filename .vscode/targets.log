@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 31 14:50:24 2022
+# Make data base, printed on Mon Aug  1 18:39:45 2022
 
 # Variables
 
@@ -99,7 +99,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 5110
+GIO_LAUNCHED_DESKTOP_FILE_PID = 40417
 # automatic
 %F = $(notdir $%)
 # environment
@@ -147,7 +147,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f14bee6b-4372-4ea0-a234-158f70ab1421.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-954f35c1-aca0-4039-b1f6-5da0c201a8f5.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -205,7 +205,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 5110
+VSCODE_PID = 40417
 # variable set hash-table stats:
 # Load=97/1024=9%, Rehash=0, Collisions=13/122=11%
 
@@ -215,9 +215,9 @@ VSCODE_PID = 5110
 
 # Directories
 
-# . (device 2053, inode 262343): 16 files, no impossibilities.
+# . (device 2053, inode 262343): 18 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 18 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -253,7 +253,7 @@ first: recv_udp send_udp
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-31 14:47:18.355555012
+#  Last modified 2022-07-31 15:04:24.893525917
 #  File has been updated.
 #  Successfully updated.
 
@@ -281,6 +281,7 @@ sec: source gateway sink
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 recv_udp: recv_udp.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -293,7 +294,7 @@ url: web_client.c
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 23):
-	gcc web_client.c -o wc
+	gcc web_client.c -o url
 
 # Not a target:
 .DEFAULT:
@@ -319,7 +320,7 @@ clean:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 26):
-	rm -f *.o recv send  source sink gateway  wc
+	rm -f *.o recv send  source sink gateway  url
 
 gateway: gateway.c
 #  Implicit rule search has not been done.
@@ -353,12 +354,12 @@ sink.c:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 31 / storage = 294 B / avg = 9 B
-# current buf: size = 8162 B / used = 294 B / count = 31 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 32 / storage = 315 B / avg = 9 B
+# current buf: size = 8162 B / used = 315 B / count = 32 / avg = 9 B
 
-# strcache performance: lookups = 57 / hit rate = 45%
+# strcache performance: lookups = 59 / hit rate = 45%
 # hash-table stats:
-# Load=31/8192=0%, Rehash=0, Collisions=1/57=2%
-# Finished Make data base on Sun Jul 31 14:50:24 2022
+# Load=32/8192=0%, Rehash=0, Collisions=1/59=2%
+# Finished Make data base on Mon Aug  1 18:39:45 2022
 
  
