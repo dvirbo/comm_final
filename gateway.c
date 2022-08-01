@@ -47,10 +47,8 @@ int main(int argc, char *argv[])
     {
         from_size = sizeof(recv);
         int cc = recvfrom(sock_recv, &msg, sizeof(msg), 0, (struct sockaddr *)&recv, &from_size); // recvive from source sock
-        printf("Got data ::%ld\n", msg.num);                                                      // prints pid from the socket
-        float result = ((float)random()) / ((float)RAND_MAX);                                     // generate random number
-        printf("result for send: %.3f\n", result);
-        if (result > 0.5)
+        float rand = ((float)random()) / ((float)RAND_MAX);                                     // generate random number
+        if (rand > 0.5)
         {
             printf("sending %ld\n", msg.num);
             sendto(sock_send, &msg, sizeof(msg), 0, (struct sockaddr *)&dest, sizeof(dest)); // send to sink
