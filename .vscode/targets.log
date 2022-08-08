@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,130 +6,68 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug  8 11:17:40 2022
+# Make data base, printed on Mon Aug  8 12:55:01 2022
 
 # Variables
 
-# 'override' directive
-GNUMAKEFLAGS := 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
-DESKTOP_SESSION = ubuntu
+WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
 # default
 .SHELLFLAGS := -c
-# environment
-XDG_SESSION_CLASS = user
-# environment
-XDG_SESSION_TYPE = x11
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# environment
-IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
-# environment
-XAUTHORITY = /run/user/1000/gdm/Xauthority
-# environment
-GDMSESSION = ubuntu
-# environment
-XMODIFIERS = @im=ibus
+# automatic
+@F = $(notdir $@)
 # makefile
-CURDIR := /home/dvirx/Desktop/comm_final
+CURDIR := /home/dvirb/comm_final-1
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /usr/share/code/code
-# environment
-JOURNAL_STREAM = 8:58789
-# environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+_ = /home/dvirb/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/node
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
-# automatic
-@F = $(notdir $@)
+# 'override' directive
+GNUMAKEFLAGS := 
 # environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
-USERNAME = dvirx
-# environment
-XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-MANAGERPID = 1434
-# environment
-LESSOPEN = | /usr/bin/lesspipe %s
-# environment
-VSCODE_CWD = /home/dvirx
+VSCODE_CWD = /mnt/c/Users/Dvir/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-# environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
-# environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1656,unix/ubuntu:/tmp/.ICE-unix/1656
-# environment
-XDG_RUNTIME_DIR = /run/user/1000
-# environment
-XDG_MENU_PREFIX = gnome-
-# environment
-VSCODE_LOG_STACK = false
+PATH = /home/dvirb/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2a/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/AdoptOpenJDK/jdk-11.0.9.11-hotspot/bin:/mnt/c/Program Files/AdoptOpenJDK/jre-11.0.9.11-hotspot/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/MinGW/bin:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Program Files/Java/jdk-14.0.2/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2021.2.2/bin:/mnt/c/Users/Dvir/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Dvir/AppData/Local/Programs/Python/Python39:/mnt/c/Program Files/spark/spark-3.1.3-bin-hadoop2.7/bin:/mnt/c/Program Files/hardoop/bin:/snap/bin
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 31e63ac3c7af4aed8244790e75a50abc
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-f6040d95-fade-404e-ad21-5c21b5c33a25.sock
+# environment
+VSCODE_SERVER_TAR = /mnt/c/Users/Dvir/AppData/Local/Temp/vscode-remote-wsl/3b889b090b5ad5793f524b5d1d39fda662b96a2a/vscode-server-stable-linux-x64.tar.gz
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
-# environment
-LS_COLORS = 
-# environment
-XDG_SESSION_DESKTOP = ubuntu
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 42207
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = :0
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-PWD = /home/dvirx/Desktop/comm_final
+PWD = /home/dvirb/comm_final-1
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1621
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
-# environment
-GTK_MODULES = gail:atk-bridge
-# environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/dvirx
+HOME = /home/dvirb
 # environment
-LESSCLOSE = /usr/bin/lesspipe %s %s
-# environment
-VSCODE_CODE_CACHE_PATH = /home/dvirx/.config/Code/CachedData/8dfae7a5cd50421d10cd99cb873990460525a898
-# environment
-LOGNAME = dvirx
+LOGNAME = dvirb
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -141,31 +77,25 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-QT_IM_MODULE = ibus
-# environment
 SHLVL = 0
-# environment
-GNOME_SHELL_SESSION_MODE = ubuntu
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c9495138-a352-4886-897d-6259dfd119e1.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
-USER = dvirx
+USER = dvirb
 # makefile
 .DEFAULT_GOAL := first
 # environment
-XDG_CURRENT_DESKTOP = Unity
+NAME = DESKTOP-MHAH2O2
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/Dvir/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
 # default
 MAKE_COMMAND := make
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
-# environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-c5e2c8e1-1.66.1-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -174,12 +104,10 @@ MFLAGS = -pqrR
 *D = $(patsubst %/,%,$(dir $*))
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-QT_ACCESSIBILITY = 1
+VSCODE_HANDLES_SIGPIPE = true
 # default
 MAKEFILES := 
 # automatic
@@ -187,27 +115,25 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+HOSTTYPE = x86_64
 # automatic
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
-GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
 LANG = C
 # environment
-VSCODE_PID = 42207
+TERM = xterm-256color
+# environment
+WSL_DISTRO_NAME = Ubuntu-20.04
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=97/1024=9%, Rehash=0, Collisions=13/122=11%
+# Load=61/1024=6%, Rehash=0, Collisions=4/86=5%
 
 # Pattern-specific Variable Values
 
@@ -215,7 +141,7 @@ VSCODE_PID = 42207
 
 # Directories
 
-# . (device 2053, inode 262343): 17 files, no impossibilities.
+# . (device 2, inode 184366109745488987): 17 files, no impossibilities.
 
 # 17 files, no impossibilities in 1 directories.
 
@@ -253,7 +179,7 @@ first: recv_udp send_udp
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-31 15:04:24.893525917
+#  Last modified 2022-08-08 12:54:49.911725
 #  File has been updated.
 #  Successfully updated.
 
@@ -283,7 +209,6 @@ sec: source gateway sink
 
 recv_udp: recv_udp.c
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
@@ -360,6 +285,8 @@ sink.c:
 # strcache performance: lookups = 58 / hit rate = 44%
 # hash-table stats:
 # Load=32/8192=0%, Rehash=0, Collisions=1/58=2%
-# Finished Make data base on Mon Aug  8 11:17:40 2022
+# Finished Make data base on Mon Aug  8 12:55:01 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+
