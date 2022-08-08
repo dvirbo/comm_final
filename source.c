@@ -6,14 +6,23 @@
 #include <sys/socket.h>
 #include <strings.h>
 #include <unistd.h>
-#define PORT 1337 // P
+#include <stdio.h>
 
 int main(int argc, char *argv[])
 {
+
+    if (argc != 3)
+    {
+        perror("didn't insert hostname & port number\n");
+        exit(1);
+    }
+
     int socket_fd, check;
-    struct sockaddr_in dest;
-    struct hostent *hostptr;
+    struct sockaddr_in dest; // host internet address (binary)
+    struct hostent *hostptr; // server host name information
     char *hostname, *hostaddr;
+    unsigned short port; // port number sent as parameter
+
     u_long num = 1;
 
     struct
@@ -26,7 +35,9 @@ int main(int argc, char *argv[])
     hostptr = gethostbyname(argv[1]);           // get the dest hostname that recieved as an arg, Return entry from host data base for host with NAME.
     dest.sin_family = (short)AF_INET;
 
-    dest.sin_port = htons((u_short)0x3333);                            // define destanation port
+    port = (unsigned short)atoi(argv[2]); // The port is the second argument
+    fprintf(stdout, "port = %d\n", port);
+    dest.sin_port = htons(port);
     bcopy(hostptr->h_addr, (char *)&dest.sin_addr, hostptr->h_length); // Copy N bytes of hostptr to sin_addr
 
     // msgbuf.body = htonl(NUM); // convert between host and network byte order.
